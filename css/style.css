@@ -3,63 +3,80 @@
 *, *::before, *::after{
   box-sizing: border-box;
 }
-html {
+html{
   font-size: 10px;
 }
 
-body {
+body{
   font-size: 1.6rem;
   color: #181818; 
   background-color: #fff;
   font-family: 'Spoqa Han Sans';
   font-weight: 400;
 }
+
 /* 레이아웃 */
 .container{
   background-color: #fff;
 }
+
 .header, .visual, .main, .slogan, .footer{
   width: 940px;
   box-sizing: border-box;
   margin: 0 auto;
 }
+
 .header{
   background-color: yellow;
 }
+
 .visual{
   background-color: lime;
   height: 120px;
 }
+
 /* 메인 콘텐츠 */
 .main{
   background-color: blue;
   padding: 30px 15px;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-height: 450px;
 }
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
 .group{
   float: left;
   margin: 0 15px;
 }
+
 .group1{
   background: pink;
   width: 250px;
-  float: right;
 }
+
 .group2{
   background: lightgreen;
   width: 380px;
 }
+
 .group3{
   background: coral;
   width: 190px;
 }
+
 .slogan{
   background-color: orange;
 }
+
 .footer-bg{
   background-color: purple;
 }
+
 .footer{
   background-color: skyblue;
 }
