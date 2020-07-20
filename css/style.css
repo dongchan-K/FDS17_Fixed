@@ -279,12 +279,15 @@ a{
   border: 0;
   border-bottom: 1px solid #ccc;
 }
+.login-form div{
+  width: 150px;
+}
 .login-form label{
-  width: 4em;
+  width: 55px;
   display: inline-block;
 }
 .login-form input{
-  width: 100px;
+  width: 90px;
   height: 22px;
   border: 1px solid #ccc;
   padding: 1px 1px 1px 5px;
