@@ -281,12 +281,15 @@ a{
 }
 .login-form div{
   width: 150px;
+  font-size: 0;
 }
 .login-form label{
+  font-size: 1.4rem;
   width: 55px;
   display: inline-block;
 }
 .login-form input{
+  font-size: 1.4rem;
   width: 90px;
   height: 22px;
   border: 1px solid #ccc;
