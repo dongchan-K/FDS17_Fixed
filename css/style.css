@@ -239,7 +239,6 @@ a{
 }
 
 .group1{
-  background-color: pink;
   width: 250px;
 }
 
@@ -251,6 +250,74 @@ a{
 .group3{
   background-color: coral;
   width: 190px;
+}
+
+/* 로그인 */
+.login{
+  background-color: #db5629;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px #ccc;
+}
+.login-heading{
+  margin: 0;
+  padding-bottom: 10px;
+  color: #ff0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+.login-form{
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+  position: relative;
+}
+.login-form fieldset{
+  padding: 0;
+  padding-bottom: 10px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+.login-form label{
+  width: 4em;
+  display: inline-block;
+}
+.login-form input{
+  width: 100px;
+  height: 22px;
+  border: 1px solid #ccc;
+  padding: 1px 1px 1px 5px;
+}
+.user-email{
+  padding-bottom: 5px;
+}
+
+.btn-login{
+  background-color: #db5629;
+  padding: 0;
+  width: 50px;
+  height: 52px;
+  font-size: 1.2rem;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.member-only{
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.member-only a{
+  padding: 5px;
 }
 
 .slogan{
