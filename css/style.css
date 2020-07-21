@@ -43,22 +43,23 @@ a{
 
 /* 레이아웃 */
 .container{
-  display: flex;
+  /* display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: center; */
 }
 
 .header, .visual, .main, .slogan, .footer{
   width: 940px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 헤더 */
 .header{
   background-color: #fff;
   border-radius: 0 0 15px 15px;
-  padding: 0 30px 0 30px;
+  padding: 1px 30px;
   position: relative;
-  /* box-sizing: border-box; */
 }
 
 /* 로고 */
@@ -234,27 +235,25 @@ a{
 
 /* 메인 콘텐츠 */
 .main{
-  background-color: blue;
+  background-color: #fff;
   min-height: 450px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
   padding: 30px;
+  border-radius: 15px 15px 0 0;
 }
 
 .group1{
-  background-color: pink;
   width: 250px;
 }
 
 .group2{
-  background-color: lightgreen;
   width: 380px;
 }
 
 .group3{
-  background-color: coral;
   width: 190px;
 }
 /* 로그인 */
@@ -346,7 +345,6 @@ a{
   margin-bottom: 0;
   padding: 0;
   list-style: none;
-  background-color: yellow;
 }
 .validation-list a{
   display: block;
@@ -363,6 +361,88 @@ a{
 }
 .validation-list a:hover{
   color: #f00;
+}
+
+/* 웹 관련 용어 */
+.term{
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+}
+.term-heading{
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.term-list{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.term-list > div{
+  margin-top: 10px;
+}
+.term-list > div::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.term-list-subject{
+  color: #296897;
+}
+.odd .term-list-subject, .odd .term-list-brief{
+  width: 145px;
+  float: right;
+}
+.odd .term-list-thumbnail {
+  float: left;
+  margin-left: 0;
+}
+.term-list-brief{
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+/* even */
+.term{
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+}
+.term-heading{
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.term-list{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.term-list > div{
+  margin-top: 10px;
+}
+.term-list > div::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.term-list-subject{
+  color: #296897;
+}
+.even .term-list-subject, .even .term-list-brief{
+  width: 145px;
+  float: left;
+}
+.even .term-list-thumbnail {
+  float: right;
+  margin-left: 0;
+}
+.term-list-brief{
+  margin-left: 0;
+  margin-top: 5px;
 }
 
 /* 슬로건 */
