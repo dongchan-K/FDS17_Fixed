@@ -19,6 +19,11 @@ body{
   font-family: 'Spoqa Han Sans';
   font-weight: 400;
 }
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
 
 /* 숨김 콘텐츠 */
 .a11y-hidden{
@@ -229,7 +234,7 @@ a{
 
 /* 메인 콘텐츠 */
 .main{
-  background-color: blue;
+  background-color: #fff;
   min-height: 450px;
   display: flex;
   flex-flow: row nowrap;
@@ -258,6 +263,7 @@ a{
   padding: 10px;
   border-radius: 5px;
   box-shadow: 5px 5px #ccc;
+  width: calc(100% - 5px);
 }
 .login-heading{
   margin: 0;
@@ -327,6 +333,67 @@ a{
 .member-only a{
   padding: 5px;
 }
+
+/* 유효성 검사 */
+.validation-list{
+  list-style: none;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+}
+.validation-list li{
+  margin-bottom: 10px;
+}
+.validation-list a{
+  display: block;
+  background: url(./images/validation_icon.png), 
+  #ccc linear-gradient(180deg, #aaa 0% , #ccc 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: 15px 50%;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding: 5px 5px 5px 35px;
+}
+.validation-list a:hover{
+  color: red;
+}
+
+/* 웹 용어 */
+.term{
+  background: #ccc linear-gradient(180deg, #aaa 0%, #ccc 100%);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.term-heading{
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.odd{
+  
+}
+.term-list{
+  margin-top: 10px;
+}
+.term-list dd{
+  margin-left: 0;
+}
+.term-list-subject{
+  color: #296897;
+}
+.term-list-subject, .term-list-brief{
+  width: 145px;
+  float: right;
+}
+.term-list-thumbnail{
+  float: left;
+}
+.term-list-brief{
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
 
 .slogan{
   background-color: orange;
