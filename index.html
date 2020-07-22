@@ -103,6 +103,7 @@
     </div>
     <main class="main clearfix">
       <div class="group group1">
+        <!-- 로그인 영역 -->
         <section class="login">
           <h2 class="login-heading">로그인</h2>
           <form action="https://formspree.io/mwkrwgrg" method="POST" class="login-form">
@@ -124,9 +125,9 @@
           <ul class="member-only clearfix">
             <li><a href="#">회원가입</a></li>
             <li><a href="#">아이디/비밀번호 찾기</a></li>
-
           </ul>
         </section>
+        <!-- 유효성 검사 배너 -->
         <h2 class="a11y-hidden">유효성 검사 배너</h2>
         <ul class="validation-list">
           <li><a href="https://validator.w3.org/" 
@@ -136,6 +137,7 @@
             target="_blank" title="CSS 유효성 검사 사이트로 이동(새창)">CSS Validation Service</a>
           </li>
         </ul>
+        <!-- 웹 용어 영역 -->
         <section class="term">
           <h2 class="term-heading">웹 관련 용어</h2>
           <dl class="term-list">
@@ -164,7 +166,19 @@
           </dl>
         </section>
       </div>
-      <div class="group group2">group2</div>
+      <div class="group group2">
+        <h2 class="a11y-hidden">검색</h2>
+        <form action="https://formspree.io/mwkrwgrg" method="POST" class="search-form">
+          <fieldset>
+            <legend class="a11y-hidden">검색폼</legend>
+            <div role="group">
+              <label for="search">자료검색</label>
+              <input type="search" name="keyword" id="search" placeholder="검색어를 입력하세요." required />
+              <button type="submit" class="btn-search">검색</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
       <div class="group group3">group3</div>
     </main>
     <article class="slogan">slogan</article> 
