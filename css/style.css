@@ -115,6 +115,10 @@ a{
   padding-left: 0;
   list-style: none;
   white-space: nowrap;
+  display: none;
+}
+.menu-act .sub-menu{
+  display: block;
 }
 .sub-menu li, .sub-menu a{
   display: inline-block;
@@ -122,6 +126,9 @@ a{
 .sub-menu a{
   padding: 8px 0;
   margin-right: 1em;
+}
+.sub-menu a:hover, .sub-menu a:focus{
+  color: red;
 }
 .sub-menu a::before{
   content: '\f192';
@@ -140,24 +147,6 @@ a{
 }
 .sub-menu4, .sub-menu5, .sub-menu6{
   right: 0;
-}
-.sub-menu1{
-  display: block;
-}
-.sub-menu2{
-  display: none;
-}
-.sub-menu3{
-  display: none;
-}
-.sub-menu4{
-  display: none;
-}
-.sub-menu5{
-  display: none;
-}
-.sub-menu6{
-  display: none;
 }
 
 /* 비주얼 */
@@ -495,17 +484,22 @@ white-space: nowrap;
 
 /* 공지사항 및 자료실 */
 .board{
-  background-color: yellow;
   margin-top: 20px;
+  padding-top: 45px;
   position: relative;
-  min-height: 180px;
 }
 .notice-heading, .pds-heading{
-  background-color: pink;
-  float: left;
+  position: absolute;
+  top: 0;
   margin: 0;
   font-size: 1.4rem;
   font-weight: 400;
+}
+.notice-heading{
+  left: 0;
+}
+.pds-heading{
+  left: 73px;
 }
 .tab{
   display: block;
@@ -533,17 +527,12 @@ white-space: nowrap;
   display: block;
 }
 .notice-list, .pds-list{
-  background-color: silver;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 100%;
+  min-height: 130px;
 }
 .notice-list li, .pds-list li{
-  background-color: orange;
   margin-bottom: 10px;
 }
 .notice-list li::after, .pds-list li::after{
@@ -558,7 +547,6 @@ white-space: nowrap;
   margin-right: .2em;
 }
 .notice-list a, .pds-list a{
-  background-color: skyblue;
   float: left;
   width: 300px;
   white-space: nowrap;
@@ -566,7 +554,6 @@ white-space: nowrap;
   text-overflow: ellipsis;  
 }
 .notice-list time, .pds-list time{
-  background-color: violet;
   float: right;
 }
 .notice-more, .pds-more{
@@ -579,6 +566,7 @@ white-space: nowrap;
 .icon-plus::before{
   color: hsla(110, 50%, 50%, 1);
 }
+
 
 /* 슬로건 */
 .slogan{
