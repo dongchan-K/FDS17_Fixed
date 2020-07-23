@@ -493,88 +493,91 @@ white-space: nowrap;
   padding: 0 10px;
 }
 
-/* 게시판 영역 */
+/* 공지사항 및 자료실 */
 .board{
-  position: relative;
+  background-color: yellow;
   margin-top: 20px;
+  position: relative;
+  min-height: 180px;
 }
-.notice-heading{  
+.notice-heading, .pds-heading{
+  background-color: pink;
   float: left;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
-.pds-heading{
-  position: absolute;
-  top: 0px;
-  left: 73px;
+.tab{
+  display: block;
+  color: #666;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
 }
-.notice-list{
+.tab-act .tab{
+  color: #db5629;
+  border-color: #db5629 #db5629 #fff #db5629;
+  background: #fff;
+}
+.notice-list, 
+.pds-list, 
+.notice-more, 
+.pds-more{
   display: none;
 }
-.pds-list{
-  display: none;
+.tab-act .notice-list, 
+.tab-act .pds-list,
+.tab-act .notice-more,
+.tab-act .pds-more{
+  display: block;
 }
-
 .notice-list, .pds-list{
-  padding-top: 45px;
+  background-color: silver;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
 }
-.notice-list li, .pds-list li {
-  margin-top: 10px;
+.notice-list li, .pds-list li{
+  background-color: orange;
+  margin-bottom: 10px;
 }
-.notice-list::before, .pds-list::before{
+.notice-list li::after, .pds-list li::after{
   content: "";
   display: block;
   clear: both;
 }
-.board ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  padding-top: 35px;
-}
-.board h2{
-  margin: 0;
-} 
-.tab{
-  font-size: 1.4rem;
-  font-weight: 500;
-  padding: 5px 10px;
-  background: #ccc linear-gradient(180deg, #ccc 0%, #eee 100%);
-  border: 1px solid #aaa;
-  border-radius: 5px 5px 0 0;
-  color: #666;
-}
-.tab-act .notice-list, .tab-act .pds-list, .tab-act .notice-more, .tab-act .pds-more{
-  display: block;
-}
-.tab-act .tab{
-  border-color: #ed552f;
-  border-bottom: 0;
-  background: #fff;
-  color: #ed552f;
-}
-.notice-list a, .pds-list a{
-  display: inline-block;
-  width: 300px;
-  white-space: nowrap;
-  overflow: hidden;
-  vertical-align: top;
-  text-overflow: ellipsis;
-}
 .notice-list a::before, .pds-list a::before{
   content: '\f192';
   font-family: 'fontello';
-  margin-left: 0.2em;
-  margin-right: 0.2em;
+  display: inline-block;
+  margin-right: .2em;
+}
+.notice-list a, .pds-list a{
+  background-color: skyblue;
+  float: left;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
 }
 .notice-list time, .pds-list time{
-  vertical-align: top;
+  background-color: violet;
+  float: right;
 }
-.icon-plus{
+.notice-more, .pds-more{
+  /* background-color: lime; */
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
 }
-.board .icon-plus::before{
-  color: green;
+.icon-plus::before{
+  color: hsla(110, 50%, 50%, 1);
 }
 
 /* 슬로건 */
