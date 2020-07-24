@@ -33,6 +33,8 @@ body{
   overflow: hidden;
   margin: -1px;
   clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
 }
 
 /* 링크 스타일 */
@@ -678,6 +680,7 @@ white-space: nowrap;
   border: 0;
   padding: 0;
   cursor: pointer;
+  vertical-align: top;
 }
 .btn-next{
   background-position: -36px 0;
