@@ -802,15 +802,12 @@ white-space: nowrap;
 }
 .slogan-brief q::before{
   font-size: 3rem;
-  position: relative;
-  top: 10px;
   margin-right: 5px;
-  /* vertical-align: bottom; */
+  vertical-align: middle;
 }
 .slogan-brief q::after{
   content: "";
-}
-
+}ㄴ
 .footer-bg{
   background-color: purple;
   width: 100%;
